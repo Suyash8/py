@@ -6,19 +6,8 @@ class TicTacToe:
         self.current_winner = None
 
     def print_board(self):
-        #prt_var = [["| " + " | ".join(row) + " |" for row in [self.board[i*3:(i+1)*3]]] for i in range(3)]
-        for row in list(self.board[i*3:(i+1)*3]) for i in range(3):
+        for row in [self.board[i*3:(i+1)*3] for i in range(3)]:
             print("| " + " | ".join(row) + " |")
-        #for ele in prt_var:
-        #for ele in prt_var:
-        #    i = 0
-        #    for el in ele:
-        #        i += 1
-        #        if i == 3:
-        #            print(el)
-        #        else:
-        #            print(el, end=' ')
-
 
     @staticmethod
     def print_board_nums():
